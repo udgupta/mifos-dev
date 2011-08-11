@@ -12,6 +12,7 @@ Youtube links
 * [Workspace 2.0 Features](http://www.youtube.com/watch?v=HGqkk1am3sg)
 
 Install MySQL (sudo apt-get install mysql-server)
+
   * Login at root (mysql -u root -p_password_)
   * Create database mifos and test (test db is used by mifos-db module I think)
 
@@ -28,6 +29,7 @@ Install GIT (git version 1.7.4.1+ )
     sudo apt-get install git-core
 
 Download the required softwares
+
   * Eclipse indigo (3.7+) Java Developers (tar.gz)
   * JDK 1.6u26+ (bin - self extracting)
   * Apache Maven 3.0.3+ (zip)
