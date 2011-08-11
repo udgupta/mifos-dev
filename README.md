@@ -30,13 +30,17 @@ Install GIT (git version 1.7.4.1+ )
 
 Download the required softwares
 
-  * Eclipse indigo (3.7+) Java Developers (tar.gz)
-  * JDK 1.6u26+ (bin - self extracting)
-  * Apache Maven 3.0.3+ (zip)
+ * Eclipse indigo (3.7+) Java Developers (tar.gz)
+ * JDK 1.6u26+ (bin - self extracting)
+ * Apache Maven 3.0.3+ (zip)
 
 Run [create-Mifos-WS-basic.sh](https://github.com/ugupta/mifos-dev/blob/master/create-Mifos-WS-basic.sh)
 
 NOTE : READ the script, setup the environment and check/update the software versions before executing
+
+Set Maven3 to your path (read maven documentation)
+
+and run "mvn clean install -Dmaven.test.skip=true". This will take a while, maven will try to download the whole internet :)
 
 Eclipse Setup
 -------------
@@ -51,7 +55,9 @@ Setup JDK path in eclipse/eclipse.ini
 
 Open eclipse and disable "Build Automatically"
 
-Import Mifos into Project Workspace
+Import Mifos into Project Workspace, let m2eclipse resolve dependencies and then enable "Build Automatically".
+
+Use Project -> clean... (is dependency resolution doesn't work)
 
 Import Eclipse [Code formatter](https://github.com/mifos/head/blob/master/eclipse-formatter-mifos-profile.xml)
 
