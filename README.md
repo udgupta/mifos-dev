@@ -79,14 +79,11 @@ Start Developing Mifos
 
 If I have to setup previous version of Mifos workspace setup. READ [create-Mifos-WS-advance.sh](https://github.com/ugupta/mifos-dev/blob/master/create-Mifos-WS-advance.sh)
 
-Future Reading
+Further Reading
 --------------
  * [Mifos Workspace 2.0](http://mifosforge.jira.com/wiki/display/MIFOS/Workspace+2.0+Eclipse+Maven+Settings)
  * [MySQL on RAM for Faster development](http://mifosforge.jira.com/wiki/display/MIFOS/RAMDisk)
  * [Maven Settings](http://mifosforge.jira.com/wiki/display/MIFOS/Workspace+2.0+Eclipse+Maven+Settings)
-
-TOPICS
-======
 
 ARCH
 ----
