@@ -83,9 +83,9 @@ Put [local.properties](https://github.com/ugupta/mifos-dev/blob/master/local.pro
 I keep some [scripts](https://github.com/ugupta/mifos-dev/tree/master/scripts) to setup Mifos database.
 copy script folder to ws-master and test scripts
 
-Start Developing Mifos
+scripts/database-acceptance.sh
 
-If I have to setup previous version of Mifos workspace setup. READ [create-Mifos-WS-advance.sh](https://github.com/ugupta/mifos-dev/blob/master/create-Mifos-WS-advance.sh)
+Run Mifos START 8080.launch (mifos-server-workspace)
 
 Further Reading
 --------------
