@@ -85,7 +85,7 @@ copy script folder to ws-master and test scripts
 
 scripts/database-acceptance.sh
 
-Run Mifos START 8080.launch (mifos-server-workspace)
+Run **Mifos START 8080.launch** (mifos-server-workspace)
 
 Further Reading
 --------------
