@@ -57,7 +57,7 @@ Open eclipse and disable "Build Automatically"
 
 Import Mifos into Project Workspace, let m2eclipse resolve dependencies and then enable "Build Automatically".
 
-Use Project -> clean... (is dependency resolution doesn't work)
+Use Project -> clean... (if dependency resolution doesn't work, red error markers should be gone)
 
 Import Eclipse [Code formatter](https://github.com/mifos/head/blob/master/eclipse-formatter-mifos-profile.xml)
 
