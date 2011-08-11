@@ -8,8 +8,8 @@ BASIC DEVELOPMENT SETUP
 
 Youtube links
 ------------
-* [Workspace 2.0 Setup](www.youtube.com/watch?v=TkvaUKo2-tk)
-* [Workspace 2.0 Features](www.youtube.com/watch?v=HGqkk1am3sg)
+* [Workspace 2.0 Setup](http://www.youtube.com/watch?v=TkvaUKo2-tk)
+* [Workspace 2.0 Features](http://www.youtube.com/watch?v=HGqkk1am3sg)
 
 Install MySQL (sudo apt-get install mysql-server)
   * Login at root (mysql -u root -p_password_)
@@ -77,11 +77,10 @@ copy script folder to ws-master and test scripts
 
 Start Developing Mifos
 
-If I have to setup previous version of Mifos workspace setup.
-
-    READ [create-Mifos-WS-advance.sh](https://github.com/ugupta/mifos-dev/blob/master/create-Mifos-WS-advance.sh)
+If I have to setup previous version of Mifos workspace setup. READ [create-Mifos-WS-advance.sh](https://github.com/ugupta/mifos-dev/blob/master/create-Mifos-WS-advance.sh)
 
 Future Reading
+--------------
  * [Mifos Workspace 2.0](http://mifosforge.jira.com/wiki/display/MIFOS/Workspace+2.0+Eclipse+Maven+Settings)
  * [MySQL on RAM for Faster development](http://mifosforge.jira.com/wiki/display/MIFOS/RAMDisk)
  * [Maven Settings](http://mifosforge.jira.com/wiki/display/MIFOS/Workspace+2.0+Eclipse+Maven+Settings)
@@ -95,7 +94,7 @@ ARCH
  * [Introduction](http://mifosforge.jira.com/wiki/display/MIFOS/Introduction+to+Mifos+for+Programmers)
 
 Infrastructure : JIRA and Hudson and sf.net
----------------
+-------------------------------------------
  * How to pick a Issues (search jira)
    * JIRA issue types
    * JIRA components
@@ -105,8 +104,7 @@ Infrastructure : JIRA and Hudson and sf.net
  Create accounts on JIRA, Hudson and [sf.net](http://sourceforge.net/projects/mifos)
    * Browse sf.net
  
-How to
--------
+
  * [Code Submission](http://mifosforge.jira.com/wiki/display/MIFOS/Code+Submission+Process#CodeSubmissionProcess-Howtosubmitapatch)
 
 More
