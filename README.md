@@ -53,7 +53,9 @@ Setup JDK path in eclipse/eclipse.ini
     -vmargs
     -Dosgi.requiredJavaVersion=1.5
 
-Open eclipse and disable "Build Automatically"
+Open eclipse and set ~/ws-master/workspace as the workspace and check remember option.
+
+Disable "Build Automatically"
 
 Import Mifos into Project Workspace, let m2eclipse resolve dependencies and then enable "Build Automatically".
 
