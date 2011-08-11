@@ -1,18 +1,27 @@
 Starting with Mifos Development on Ubuntu 11.04 (64 Bit)
 ========================================================
 
+My personal notes about Mifos setup.
+
 BASIC DEVELOPMENT SETUP
 =======================
 
+Youtube links
+------------
+* [Workspace 2.0 Setup](www.youtube.com/watch?v=TkvaUKo2-tk)
+* [Workspace 2.0 Features](www.youtube.com/watch?v=HGqkk1am3sg)
+
 Install MySQL (sudo apt-get install mysql-server)
-  * Login at root
-  * Create database mifos and test
+  * Login at root (mysql -u root -p_password_)
+  * Create database mifos and test (test db is used by mifos-db module I think)
 
     CREATE DATABASE mifos;
+    CREATE DATABASE test;
 
   * Create user mifos with password mifos and grant full permission for mifos database
 
     GRANT ALL on mifos.* to 'mifos'@'localhost' identified by 'mifos';
+    GRANT ALL on test.* to 'mifos'@'localhost' identified by 'mifos';
 
 Install GIT (git version 1.7.4.1+ )
     
@@ -37,57 +46,71 @@ Setup JDK path in eclipse/eclipse.ini
     ../jdk1.6.0_25/bin/java
     -vmargs
     -Dosgi.requiredJavaVersion=1.5
-    
+
 Open eclipse and disable "Build Automatically"
 
-Import Mifos Workspace
+Import Mifos into Project Workspace
 
-Import Coding format
+Import Eclipse [Code formatter](https://github.com/mifos/head/blob/master/eclipse-formatter-mifos-profile.xml)
 
-Setup whitespace and Save Actions
+Setup Whitespace and Save Actions (Eclipse 3.7 Menu) (Optional)
 
-Create [local.properties](https://github.com/ugupta/mifos-dev/blob/master/local.properties)
+- Window -> Preferences -> General -> Editors -> Text Editors
+ * Check - Insert spaces for tabs
+ * Check - Show whitespace charaters (open link uncheck all except tabs, this will help in detecting tabs in your code)
 
+- Window -> Preferences -> Java -> Editor -> Save Actions
+ * Check - Perform the selected actions on save
+ * Uncheck - Format source code
+ * Uncheck - Organize Imports
+ * Check - Additional actions
+ * Configure - Uncheck everything, check "Remove trailing whitespace", "Remove unused imports", "Remove unnecessary cast"
+
+__NOTE:__ Don't make these configuration using project specific settings, it should be your workspace configuration only, workspace configuration applies to all the projects.
+
+Put [local.properties](https://github.com/ugupta/mifos-dev/blob/master/local.properties) under ~/.mifos
+
+~/.mifos/local.properties (~/ is $HOME)
+
+I keep some [scripts](https://github.com/ugupta/mifos-dev/tree/master/scripts) to setup Mifos database.
 copy script folder to ws-master and test scripts
 
 Start Developing Mifos
 
-previous version of Mifos workspace setup (TODO)
- READ [create-Mifos-WS-advance.sh](https://github.com/ugupta/mifos-dev/blob/master/create-Mifos-WS-advance.sh)
+If I have to setup previous version of Mifos workspace setup.
+
+    READ [create-Mifos-WS-advance.sh](https://github.com/ugupta/mifos-dev/blob/master/create-Mifos-WS-advance.sh)
 
 Future Reading
-  * [Mifos Workspace 2.0](http://mifosforge.jira.com/wiki/display/MIFOS/Workspace+2.0+Eclipse+Maven+Settings)
-  * [MySQL on RAM for Faster development](http://mifosforge.jira.com/wiki/display/MIFOS/RAMDisk)
-  * [Maven Settings](http://mifosforge.jira.com/wiki/display/MIFOS/Workspace+2.0+Eclipse+Maven+Settings)
+ * [Mifos Workspace 2.0](http://mifosforge.jira.com/wiki/display/MIFOS/Workspace+2.0+Eclipse+Maven+Settings)
+ * [MySQL on RAM for Faster development](http://mifosforge.jira.com/wiki/display/MIFOS/RAMDisk)
+ * [Maven Settings](http://mifosforge.jira.com/wiki/display/MIFOS/Workspace+2.0+Eclipse+Maven+Settings)
 
 TOPICS
 ======
 
 ARCH
 ----
-   * [Modules - and sub topics](http://mifosforge.jira.com/wiki/display/MIFOS/Elsie+F+Architecture)
-   * [Bits and Pieces](http://mifosforge.jira.com/wiki/display/MIFOS/Introduction+to+Mifos+for+Programmers)
+ * [Modules](http://mifosforge.jira.com/wiki/display/MIFOS/Elsie+F+Architecture)
+ * [Introduction](http://mifosforge.jira.com/wiki/display/MIFOS/Introduction+to+Mifos+for+Programmers)
 
-JIRA and Hudson and sf.net
+Infrastructure : JIRA and Hudson and sf.net
 ---------------
- * JIRA issue types
- * JIRA components
- * Volunteer Issues
  * How to pick a Issues (search jira)
-
- * Hudson builds
- * Hudson deployment jobs
+   * JIRA issue types
+   * JIRA components
+   * Volunteer Issues
+   * Hudson builds (http://ci.mifos.org/hudson)
  
- Create accounts on JIRA, hudson and [sf.net](http://sourceforge.net/projects/mifos)
+ Create accounts on JIRA, Hudson and [sf.net](http://sourceforge.net/projects/mifos)
    * Browse sf.net
  
 How to
 -------
-[Code Submission](http://mifosforge.jira.com/wiki/display/MIFOS/Code+Submission+Process#CodeSubmissionProcess-Howtosubmitapatch)
-[Developer Call]
+ * [Code Submission](http://mifosforge.jira.com/wiki/display/MIFOS/Code+Submission+Process#CodeSubmissionProcess-Howtosubmitapatch)
 
-Next
+More
 ----
-[http://mifosforge.jira.com/wiki/display/MIFOS/2011+Product+Planning](http://mifosforge.jira.com/wiki/display/MIFOS/2011+Product+Planning)
-[http://mifosforge.jira.com/wiki/display/MIFOS/MIFOS+QA+Technology+Plan](http://mifosforge.jira.com/wiki/display/MIFOS/MIFOS+QA+Technology+Plan)
+ * [http://mifosforge.jira.com/wiki/display/MIFOS/2011+Product+Planning](http://mifosforge.jira.com/wiki/display/MIFOS/2011+Product+Planning)
+ * [http://mifosforge.jira.com/wiki/display/MIFOS/MIFOS+QA+Technology+Plan](http://mifosforge.jira.com/wiki/display/MIFOS/MIFOS+QA+Technology+Plan)
 
