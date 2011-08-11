@@ -36,7 +36,12 @@ Download the required softwares
 
 Run [create-Mifos-WS-basic.sh](https://github.com/ugupta/mifos-dev/blob/master/create-Mifos-WS-basic.sh)
 
-NOTE : READ the script, setup the environment and check/update the software versions before executing
+__NOTE__ : READ the script, setup the environment and check/update the software versions before executing
+
+I keep everything under ~/Projects/Mifos/ws-master/
+ maven, jdk, eclipse etc.
+
+I need different environment for different projects (apart from Mifos) that's why I avoid setting up global configuration (including jdk). But you can save space by configuring things in a different way.
 
 Set Maven3 to your path (read maven documentation)
 
@@ -53,7 +58,7 @@ Setup JDK path in eclipse/eclipse.ini
     -vmargs
     -Dosgi.requiredJavaVersion=1.5
 
-Open eclipse and set ~/ws-master/workspace as the workspace and check remember option.
+Open eclipse and set ws-master/workspace as the workspace and check remember option.
 
 Disable "Build Automatically"
 
