@@ -113,8 +113,7 @@ Infrastructure : JIRA and Hudson and sf.net
    * Volunteer Issues
    * Hudson builds (http://ci.mifos.org/hudson)
  
- Create accounts on JIRA, Hudson and [sf.net](http://sourceforge.net/projects/mifos)
-   * Browse sf.net
+ Create accounts on JIRA, Hudson and Github
  
 
  * [Code Submission](http://mifosforge.jira.com/wiki/display/MIFOS/Code+Submission+Process#CodeSubmissionProcess-Howtosubmitapatch)
